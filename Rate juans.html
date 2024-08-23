@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Juans</title>
+    <style type="text/css">
+        h1{
+            text-align: center;
+            font-size: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            text-align: center;
+            font-size: 13px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .star {
+        font-size: 10vh;
+         cursor: pointer;
+        }
+ 
+        .one {
+        color: rgb(255, 0, 0);
+        }
+ 
+        .two {
+         color: rgb(255, 106, 0);
+        }
+ 
+        .three {
+        color: rgb(251, 255, 120);
+        }
+ 
+        .four {
+        color: rgb(255, 255, 0);
+        }
+ 
+        .five {
+        color: rgb(24, 159, 14);
+        }
+        footer{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+            text-align:right;
+        }
+    </style>
+   <script type="text/javascript">
+        let stars = document.getElementsByClassName("star");
+        let output = document.getElementById("output");
+ 
+        // Function to update rating
+        function gfg(n) {
+            remove();
+            let cls;
+            if (n == 1) cls = "one";
+            else if (n == 2) cls = "two";
+            else if (n == 3) cls = "three";
+            else if (n == 4) cls = "four";
+            else if (n == 5) cls = "five";
+            for (let i = 0; i < n; i++) {
+                stars[i].className = "star " + cls;
+            }
+            output.innerText = "Rating is: " + n + "/5";
+        }
+ 
+        // To remove the pre-applied styling
+        function remove() {
+            for (let i = 0; i < 5; i++) {
+                stars[i].className = "star";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Rate the Juans</h1>
+    <table>
+        <tr>
+            <td><a href="https://es.wikipedia.org/wiki/Juan_Escutia" target=”_blank”><img width="80%" src="C:\Users\HP\Downloads\Escutiasama.png" alt=""></a></td>
+            <td><a href="https://es.wikipedia.org/wiki/Juan_Rulfo" target=”_blank”><img width="80%" src="C:\Users\HP\Downloads\Juanrulfo.png" alt=""></a></td>
+            <td><a href="https://es.wikipedia.org/wiki/Juan_de_la_Barrera" target=”_blank”><img width="120%" src="C:\Users\HP\Downloads\Juandelabarrera.png" alt=""></a></td>
+            <td><a href="https://es.wikipedia.org/wiki/Juan_Gabriel" target=”_blank”><img width="120%" src="C:\Users\HP\Downloads\JuanGabriel.png" alt=""></a></td>
+        </tr>
+        <tr>
+            <td><b>Juan Escutia</b></td>
+            <td><b>Juan Rulfo</b></td>
+            <td><b>Juan de la Barrera</b></td>
+            <td><b>Juan Gabriel</b></td>
+        </tr>
+        <tr>
+            <td>A young Mexican cadet who bravely</td>
+            <td>Acclaimed Mexican author known</td>
+            <td>A Mexican military officer who fought</td>
+            <td>A beloved Mexican singer and songwriter</td>
+        </tr>
+        <tr>
+            <td>sacrificed his life during the Battle</td>
+            <td>for his influential works such as</td>
+            <td>valiantly in the Battle of Chapultepec</td>
+            <td>renowned for his emotional performances</td>
+        </tr>
+        <tr>
+            <td>of Chapultepec in 1847</td>
+            <td>"Pedro Páramo" and "El Llano en llamas,"</td>
+            <td> alongside Juan Escutia</td>
+            <td>and iconic songs</td>
+        </tr>
+        <tr>
+            <td>Stars:</td>
+            <td>Stars:</td>
+            <td>Stars:</td>
+            <td>Stars:</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox">1
+                <input type="checkbox">2
+                <input type="checkbox">3
+                <input type="checkbox">4
+                <input type="checkbox">5
+            </td>
+            <td>
+                <input type="checkbox">1
+                <input type="checkbox">2
+                <input type="checkbox">3
+                <input type="checkbox">4
+                <input type="checkbox">5
+            </td>
+            <td>
+                <input type="checkbox">1
+                <input type="checkbox">2
+                <input type="checkbox">3
+                <input type="checkbox">4
+                <input type="checkbox">5
+            </td>
+            <td>
+                <input type="checkbox">1
+                <input type="checkbox">2
+                <input type="checkbox">3
+                <input type="checkbox">4
+                <input type="checkbox">5
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://es.wikipedia.org/wiki/Juan_Soler" target="_blank"><img width="50%" src="C:\Users\HP\Downloads\WhatsApp Image 2024-02-09 at 11.37.33 AM.jpeg" alt=""></a></td>
+            <td><a href="https://youtube.fandom.com/es/wiki/JuanSGuarnizo#:~:text=Juan%20Sebastián%20Guarnizo%20Algarra%20(Ibagué,%2C%20originalmente%20de%20Ibagué%2C%20Colombia." target=”_blank”><img width="50%" src="C:\Users\HP\Downloads\WhatsApp Image 2024-02-09 at 11.15.44 AM.jpeg" alt=""></a></td>
+            <td><a href="https://youtube.fandom.com/es/wiki/Juan_De_Dios_Pantoja" target="_blank"><img width="120%" src="C:\Users\HP\Downloads\jd.png" alt=""></a></td>
+            <td><a href="https://es.wikipedia.org/wiki/Juan_el_Apóstol" target="_blank"><img width="120%" src="C:\Users\HP\Downloads\dos.png" alt=""></a></td>
+        </tr>
+        <tr>
+            <td><b>Juan Soler</b></td>
+            <td><b>JuanSGuarnizo</b></td>
+            <td><b>Juan de Dios Pantoja</b></td>
+            <td><b>San Juan</b></td>
+        </tr>
+        <tr>
+            <td>is a well-known actor and model </td>
+            <td>is a Colombian-Mexican streamer</td>
+            <td>s a Mexican social media influencer,</td>
+            <td>was known for his deep spiritual</td>
+        </tr>
+        <tr>
+            <td>from Argentina. He has gained </td>
+            <td>and YouTuber. He gained recognition for his</td>
+            <td>YouTuber, and singer known for his vlogs, </td>
+            <td> insights and close relationship with Jesus. </td>
+        </tr>
+        <tr>
+            <td>recognition for his appearances in TV</td>
+            <td>involvement in various projects</td>
+            <td>challenges, and music content.</td>
+            <td>He spread Christianity </td>
+        </tr>
+        <tr>
+            <td>Stars:</td>
+            <td>Stars:</td>
+            <td>Stars:</td>
+            <td>Stars:</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox">1
+                <input type="checkbox">2
+                <input type="checkbox">3
+                <input type="checkbox">4
+                <input type="checkbox">5
+            </td>
+            <td>
+                <input type="checkbox">1
+                <input type="checkbox">2
+                <input type="checkbox">3
+                <input type="checkbox">4
+                <input type="checkbox">5
+            </td>
+            <td>
+                <input type="checkbox">1
+                <input type="checkbox">2
+                <input type="checkbox">3
+                <input type="checkbox">4
+                <input type="checkbox">5
+            </td>
+            <td>
+                <input type="checkbox">1
+                <input type="checkbox">2
+                <input type="checkbox">3
+                <input type="checkbox">4
+                <input type="checkbox">5
+            </td>
+        </tr>
+    </table>
+    <a href="C:\Users\HP\Documents\Only Juans.html"><img width="50px" src="C:\Users\HP\Downloads\goback.png" alt=""></a>
+
+    <footer><i>All rights reserved to Onlyjuans</i><footer>
+
+</body>
+</html>
